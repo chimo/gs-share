@@ -16,7 +16,7 @@ Add one of the following where you want the links/buttons to appear.
 #### With server-side fallback
 
     <div class="gs-share">
-      <a href="share.php?url=URL-from-href&amp;title=TITLE-from-href" class="js-gs-share">Share on GNU social</a>
+      <a href="gs-share.php?url=URL-from-href&amp;title=TITLE-from-href" class="js-gs-share">Share on GNU social</a>
     </div>
 
 #### JavaScript only
@@ -46,4 +46,4 @@ Add the following in the `<head>` of your page.
 
 ## Demo
 
-http://chromic.org/articles/project-autonomous/#share
+https://chromic.org/blog/project-autonomous/#gs-share
