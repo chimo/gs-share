@@ -6,6 +6,9 @@
      * The error message logic is especially bad.
      */
 
+    // Make sure warnings aren't printed and interfere with header()
+    error_reporting(E_ALL ^ E_WARNING);
+
     // Error message
     global $err;
     $err = '';
