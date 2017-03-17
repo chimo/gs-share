@@ -11,39 +11,31 @@ the current page with the document's title.
 
 ### HTML
 
-Add one of the following where you want the links/buttons to appear.
+Add the following in the `<head>` of your page (if necessary, change the path
+to point to the stylesheet).
 
-#### With server-side fallback
+    <link rel="stylesheet" href="styles.css">
 
-    <div class="gs-share">
-      <a href="gs-share.php?url=URL-from-href&amp;title=TITLE-from-href" class="js-gs-share">Share on GNU social</a>
-    </div>
-
-#### JavaScript only
-
-    <div class="gs-share">
-      <button data-url="URL-from-data" data-title="TITLE-from-data" class="js-gs-share">Share on GNU social</button>
-    </div>
-
-#### "Icon" class
+Add the following where you want the links/buttons to appear.
 
     <div class="gs-share">
       <button data-url="URL-from-data" data-title="TITLE-from-data" class="js-gs-share gs-share--icon">Share on GNU social</button>
     </div>
 
-### JavaScript
+The "data-title" and "data-url" attributes are optional. If they are not set,
+the "title" will be the title of the current page and the "url" will be the
+URL of the current page.
 
-Add the following at the bottom of your page.
-(Optional if you're using the "server-side fallback" method above).
+Add the following at the bottom of your page (if necessary, change the path
+to point to the JS file).
 
     <script src="gs-share.js"></script>
-
-### CSS
-
-Add the following in the `<head>` of your page.
-
-    <link rel="stylesheet" href="styles.css" />
 
 ## Demo
 
 https://chromic.org/blog/project-autonomous/#gs-share
+
+## Server-side fallback
+
+For an example of a server-side fallback, see the "php" branch in this repo.
+
