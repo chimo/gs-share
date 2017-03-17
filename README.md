@@ -3,12 +3,6 @@
 This adds links/buttons to your page so that visitors can share it on
 GNU social.
 
-## Usage
-
-You can use this in a few different ways. In all cases, the "title"
-and "URL" parameters are optional. If omitted, the widget will share
-the current page with the document's title.
-
 ### HTML
 
 Add the following in the `<head>` of your page (if necessary, change the path
@@ -33,7 +27,7 @@ to point to the JS file).
 
 ## Demo
 
-https://chromic.org/blog/project-autonomous/#gs-share
+https://chromic.org/gs-share/
 
 ## Server-side fallback
 
